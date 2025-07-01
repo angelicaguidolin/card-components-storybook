@@ -1,0 +1,28 @@
+*,
+*::before
+*::after{
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+}
+
+
+:root{
+    font-family: "Montserrat", sans-serif;
+    font-size: medium;
+    color:black;
+}
+.container{
+ 
+   height: 50vh;
+   width: 40vh;
+
+}
+
+/*TYPOGRAPHY*/
+.title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}

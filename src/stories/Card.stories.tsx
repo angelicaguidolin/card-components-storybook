@@ -2,6 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import {Card} from "./Card";
 import React from 'react';
 
+
 const meta={
     title: 'Exmple/Card',
     component: Card,
