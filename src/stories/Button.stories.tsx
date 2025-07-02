@@ -1,11 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import {Card} from "./Card";
+import { Button } from './Button';
 import React from 'react';
 
-
 const meta={
-    title: 'Exmple/Card',
-    component: Card,
+    title: 'Exmple/Button',
+    component: Button,
     parameters:{
         layout:'centered',
     },
@@ -13,9 +12,10 @@ const meta={
     tags:['autodocs']
 }
 export default meta;
+
 type Story= StoryObj<typeof meta>
  export const Default: Story={
     render:()=>(
-      <Card/>
+      <Button/>
     )
  }
