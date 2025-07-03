@@ -1,9 +1,14 @@
 import React from "react";
+import "../styles/button.css";
 
-export const Button=({})=>{
+
+
+export const Button=({backgroundColor})=>{
     return(
         <>
-        <button>click me</button>
+        <button className="btn"
+        style={{ backgroundColor }}
+        >click me</button>
         </>
     )
 }

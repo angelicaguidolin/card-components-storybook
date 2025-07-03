@@ -1,0 +1,9 @@
+.btn{
+    background:transparent;
+    border: none;
+    font-size: 18px;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #5c80bc;
+    color: white;
+}
