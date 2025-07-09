@@ -11,7 +11,7 @@ type CardProps = {
     title: string;
     description: string;
     variant?: "primary"| "secondary"| "third";
-    image?: string;
+  
  
 }
 const changeImage: Record<string, string> = {
@@ -19,7 +19,7 @@ const changeImage: Record<string, string> = {
     secondary: "src/img/img_2.png",  
     third: "src/img/img_3.png",
 }
-export const Card: React.FC<CardProps> = ({ title, description, variant="primary",image}) => {
+export const Card: React.FC<CardProps> = ({ title, description, variant="primary",}) => {
     const variants={
         primary:{
             backgroundColor:"#FFF4E9",
@@ -28,7 +28,7 @@ export const Card: React.FC<CardProps> = ({ title, description, variant="primary
         },
         secondary:{
             backgroundColor:"#F4B570",
-            color: "#white",
+            color: "#000",
         },
         third:{
             backgroundColor:"#A7D8BC",
@@ -39,7 +39,7 @@ export const Card: React.FC<CardProps> = ({ title, description, variant="primary
     const styles={
         ...variants[variant],
     }
-    const imgchange= changeImage[variant] || img_1;
+    const imgchange= changeImage[variant] || "src/img/img_1.png";
     return(
         <div className="container">
             <div className="card" style={styles} >

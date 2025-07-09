@@ -1,7 +1,6 @@
 //IMPORT
 import React from "react";
 import { Card } from "./Card";
-
 import type { Meta, StoryObj } from "@storybook/react";
 
 

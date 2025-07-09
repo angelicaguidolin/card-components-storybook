@@ -17,20 +17,20 @@ export const Primary: Story={
     args:{
         label: "button",
         variant: "primary",
-        disabled: false,
+        
     }
 }
 export const Secondary: Story={
     args:{
         label: "button",
         variant: "secondary",
-        disabled: false,
+        
     }
 }
 export const Disabled: Story={
     args:{
         label: "button",
         variant: "disabled",
-        disabled: true,
+       
     }
 }

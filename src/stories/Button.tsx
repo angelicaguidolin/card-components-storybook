@@ -7,17 +7,14 @@ import { Disabled } from "./Button.stories";
 //CODE
 export interface ButtonProps {
     label: string;
-    bakcgroundColor?: string;
     size?:'small' | 'medium' | 'large';
     onClick?: () => void;
-    icon?: React.ReactNode;
-    disabled?: boolean;
     variant?: "primary" | "secondary" | "disabled";
 }
-export const Button=({label, onClick, variant = "primary", size}: ButtonProps) =>{
+export const Button=({label, onClick, variant = "primary"}: ButtonProps) =>{
     const variants={
         primary:{
-            backgroundColor: "#009A8B",
+            backgroundColor: "#02cab6",
             color : "white",
             size: 'medium',
             disabled: false,
@@ -29,8 +26,8 @@ export const Button=({label, onClick, variant = "primary", size}: ButtonProps) =
             disabled: false,
         },
         disabled:{
-            backgroundColor:"#788185",
-            color: "white",
+            backgroundColor:"#b8bfc1",
+            color: "black",
             cursor: "not-allowed",
           
         }
@@ -38,6 +35,7 @@ export const Button=({label, onClick, variant = "primary", size}: ButtonProps) =
 const styles={
    ...variants[variant],
 }
+
     return(
         <button className="btn"  style={styles} onClick={onClick}>{label}</button>
     )
